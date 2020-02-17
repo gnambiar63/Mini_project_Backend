@@ -35,7 +35,7 @@ exports.register = (req,res) =>
 
                 if (!err) {
                     console.log('Registered');
-                    res.status(200).send({ message: 'Valid' });
+                    res.status(200).send({ message: 'Valid', Email:req.body.Email });
                     // router.get('/register', (req, res) => res.send("Success"));
 
                 }
